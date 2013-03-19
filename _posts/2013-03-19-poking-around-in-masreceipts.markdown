@@ -6,7 +6,7 @@ title: Poking Around in Mac App Store Receipts
 Yngve Åström asked if anyone knew how to tell which Apple ID installed an app store app on the [MacEnterprise](https://groups.google.com/forum/?fromgroups=#!topic/macenterprise/-w3tHkdNfSs) mailing list:
 
 > Is it  just me or have anyone been able to read something useful out of the app/Contents/_MASReceipt/receipt?
-> I'm looking for a way to find out which account was used to by an app, the _MASreceipt library looked like the right place to look.
+> I'm looking for a way to find out which account was used to by an app, the \_MASreceipt library looked like the right place to look.
 > Doesn't matter how I trie to read the receipt all I get is bits of readable info that makes very little sense to me.
 > Looks  like binary peaces of certs but nothing close to an AppStore account.
 > The /Users/myuser/Library/Preferences/com.apple.storeagent.plist AppleID will tell me what account I'm using now but that's it.
