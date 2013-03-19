@@ -379,6 +379,16 @@ nav section {
 }
 
 
+/* Post navigation. */
+
+nav .next {
+    float: right;
+}
+
+article nav p {
+    margin: 2em 0 0.5em 0;
+    text-align: center;
+}
 /* Shell samples. */
 
 code.prompt {

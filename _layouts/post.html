@@ -7,11 +7,30 @@ layout: default
   <p>published {{ page.date | date_to_string }}</p>
 </header>
 
-<section>
+<article>
   
   {{ content }}
 
-  <p>
-    <a href="/">← Back to index.</a>
-  </p>
-</section>
+  <nav>
+    <p>
+      <a href="/">⤺ Back to index.</a>
+    </p>
+    
+    <span class="prev">
+      {% if page.previous.url %}
+        <a href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a>
+      {% else %}
+        &nbsp;
+      {% endif %}
+    </span>
+  
+    <span class="next">
+      {% if page.next.url %}
+        <a href="{{page.next.url}}" title="next Post: {{page.next.title}}">{{page.next.title}} &raquo; </a>
+      {% else %}
+        &nbsp;
+      {% endif %}
+    </span>
+  </nav>
+
+</article>
