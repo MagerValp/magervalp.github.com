@@ -19,7 +19,7 @@ body {
 }
 
 .wrapper {
-  width: 800px;
+  max-width: 840px;
   margin: 0 auto;
   background: #DEDEDE;
   -webkit-border-radius: 8px;
@@ -245,7 +245,7 @@ hr {
 }
 
 footer {
-  width: 800px;
+  max-width: 840px;
   margin: 0 auto;
   padding: 20px 0 0;
   color: #ccc;
@@ -326,8 +326,11 @@ footer p + p a + a {
 /**********************************************************************/
 
 
+#blog_index {
+    padding-left: 1.2em;
+}
 #blog_index li:before {
-    content: "\0BB  ";
+    content: "\0BB  \0a0 ";
 }
 
 #blog_index li {
@@ -337,5 +340,5 @@ footer p + p a + a {
 
 #blog_index li span {
     float: right;
-    margin-right: 3em;
+    margin-right: 2em;
 }
