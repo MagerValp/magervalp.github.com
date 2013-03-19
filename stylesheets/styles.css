@@ -32,7 +32,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;
 }
 
-header, section, footer {
+header, #index, article, footer {
   display: block;
 }
 
@@ -134,7 +134,7 @@ header .avatar:before {
 }
 
 
-section {
+#index, article {
   padding: 15px 20px;
   font-size: 15px;
   border-top: 1px solid #fff;
@@ -323,26 +323,51 @@ footer p + p a + a {
   }
 }
 
-/**********************************************************************/
 
+/* Blog index page. */
 
-#blog_index {
+dl {
     padding-left: 1.2em;
 }
-#blog_index li:before {
+dt:before {
     content: "\0BB  \0a0 ";
 }
 
-#blog_index li {
+dt {
     width: 100%;
     list-style: none outside none;
+    font-weight: 300;
 }
 
-#blog_index li span {
+dt span {
     float: right;
-    margin-right: 2em;
+    margin-right: 10px;
 }
 
+dd {
+    margin: 10px 30px;
+    font-style: italic;
+}
+
+dd p + p {
+    margin-top: -10px;
+}
+
+nav section {
+    background-color: rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 5px;
+    -moz-border-radius:    5px;
+    -ms-border-radius:     5px;
+    -o-border-radius:      5px;
+    border-radius:         5px;
+    padding: 4px 8px 0px 8px;
+    -webkit-box-shadow: inset rgba(0, 0, 0, 0.2) 0 1px 0, inset rgb(255, 255, 255) 0 -1px 0;
+    -moz-box-shadow:    inset rgba(0, 0, 0, 0.2) 0 1px 0, inset rgb(255, 255, 255) 0 -1px 0;
+    box-shadow:         inset rgba(0, 0, 0, 0.2) 0 1px 0, inset rgb(255, 255, 255) 0 -1px 0;
+}
+
+
+/* Shell samples. */
 
 code.prompt {
     color: #888;
@@ -355,5 +380,9 @@ code.prompt {
 code.in {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 1px;
-    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius:    3px;
+    -ms-border-radius:     3px;
+    -o-border-radius:      3px;
+    border-radius:         3px;
 }
