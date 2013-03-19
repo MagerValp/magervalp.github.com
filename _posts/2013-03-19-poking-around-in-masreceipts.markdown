@@ -135,7 +135,7 @@ Bundle ID and app version are self explanatory, and the SHA-1 hash is used to ve
 
 From [Apple's documentation](http://developer.apple.com/library/mac/#releasenotes/General/ValidateAppStoreReceipt/#//apple_ref/doc/uid/TP40010573-CH1-SW5) we can see that it's used together with the computer's GUID in computing the verification hash. The [ASN.1 specification](http://en.wikipedia.org/wiki/Basic_Encoding_Rules#Identifier_octets) tells us that it's an integer (0x02) and that it's four bytes long (0x04). Let's print it as a decimal integer:
 
-<pre><code class="prompt">$ </code><code class="in">printf "%d\n" 0x$(openssl asn1parse -inform der -in receipt.asn | grep -A 2 ':04$' | tail -1 | cut -d: -f4 | cut -c5-)</code>
+<pre><code class="prompt">$ </code><code class="in">printf "%d\n" 0x$(openssl asn1parse -inform der -in payload.asn | grep -A 2 ':04$' | tail -1 | cut -d: -f4 | cut -c5-)</code>
 <code class="out">1032064738</code></pre>
 
 Still pretty opaque. Haven't I seen that integer somewhere else though? Indeed I have:
