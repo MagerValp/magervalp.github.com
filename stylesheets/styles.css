@@ -282,59 +282,6 @@ footer p + p a + a {
     margin-left: 1em;
 }
 
-@media print, screen and (max-width: 740px) {
-    body {
-        padding: 0;
-    }
-
-    .wrapper {
-        -webkit-border-radius: 0;
-        -moz-border-radius:    0;
-        -ms-border-radius:     0;
-        -o-border-radius:      0;
-        border-radius:         0;
-        -webkit-box-shadow: none;
-        -moz-box-shadow:    none;
-        box-shadow:         none;
-        width: 100%;
-    }
-
-    footer {
-        -webkit-border-radius: 0;
-        -moz-border-radius:    0;
-        -ms-border-radius:     0;
-        -o-border-radius:      0;
-        border-radius:         0;
-        padding: 20px;
-        width: auto;
-    }
-    footer p {
-        float: none;
-        margin: 0;
-    }
-    footer p + p {
-        float: none;
-    }
-}
-@media print, screen and (max-width:580px) {
-    header ul {
-        display: none;
-    }
-
-    header p.view {
-        display: block;
-    }
-
-    header p {
-        width: 100%;
-    }
-}
-@media print {
-    header p.view a small:before {
-        content: 'at http://github.com/';
-    }
-}
-
 
 /* Blog index page. */
 
@@ -349,6 +296,12 @@ dt {
     width: 100%;
     list-style: none outside none;
     font-weight: 300;
+    font-size: 125%;
+    padding-top: 15px;
+}
+
+dt a {
+    xx
 }
 
 dt span {
@@ -358,11 +311,14 @@ dt span {
 
 dd {
     margin: 10px 30px;
+    padding-bottom: 10px;
+    padding-top: 2px;
     font-style: italic;
 }
 
-dd p + p {
-    margin-top: -10px;
+dd p a {
+    float: right;
+    margin-top: 0.8em;
 }
 
 nav section {
@@ -389,6 +345,8 @@ article nav p {
     margin: 2em 0 0.5em 0;
     text-align: center;
 }
+
+
 /* Shell samples. */
 
 code.prompt {
@@ -407,4 +365,81 @@ code.in {
     -ms-border-radius:     3px;
     -o-border-radius:      3px;
     border-radius:         3px;
+}
+
+
+/* Small screen adjustments. */
+
+@media print, screen and (max-width: 740px) {
+    body {
+        padding: 0;
+    }
+
+    .wrapper {
+        -webkit-border-radius: 0;
+        -moz-border-radius:    0;
+        -ms-border-radius:     0;
+        -o-border-radius:      0;
+        border-radius:         0;
+        -webkit-box-shadow: none;
+        -moz-box-shadow:    none;
+        box-shadow:         none;
+        width: 100%;
+    }
+    #index, article {
+        padding: 10px 20px;
+        xborder: 1px solid red;
+    }
+
+    footer {
+        -webkit-border-radius: 0;
+        -moz-border-radius:    0;
+        -ms-border-radius:     0;
+        -o-border-radius:      0;
+        border-radius:         0;
+        padding: 20px;
+        width: auto;
+    }
+    footer p {
+        float: none;
+        margin: 0;
+    }
+    footer p + p {
+        float: none;
+    }
+    nav section {
+        padding: 0px 10px 0px 0px;
+        margin-left: -20px;
+        margin-right: -20px;
+        -webkit-border-radius: 0;
+        -moz-border-radius:    0;
+        -ms-border-radius:     0;
+        -o-border-radius:      0;
+        border-radius:         0;
+    }
+    dt:before {
+        content: "";
+    }
+    dd {
+        clear: both;
+        margin: 0px;
+    }
+}
+@media print, screen and (max-width:580px) {
+    header ul {
+        display: none;
+    }
+
+    header p.view {
+        display: block;
+    }
+
+    header p {
+        width: 100%;
+    }
+}
+@media print {
+    header p.view a small:before {
+        content: 'at http://github.com/';
+    }
 }
