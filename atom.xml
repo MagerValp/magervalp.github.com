@@ -11,7 +11,7 @@ layout: nil
  <id>http://magervalp.github.com/</id>
  <author>
    <name>Per Olofsson</name>
-   <email>MagerValp@gmail.com</email>
+   <email>{{ site.email }}</email>
  </author>
 
  {% for post in site.posts %}

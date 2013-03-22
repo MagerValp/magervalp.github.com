@@ -2,3 +2,4 @@ auto: true
 url: http://localhost:4000
 source: .
 destination: ./_site
+email: MagerValp@gmail.com
