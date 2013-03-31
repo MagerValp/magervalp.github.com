@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Poking Around in Mac App Store Receipts
+tags: Mac
 ---
 
 Yngve Åström asked if anyone knew how to tell which Apple ID installed an app store app on the [MacEnterprise](https://groups.google.com/forum/?fromgroups=#!topic/macenterprise/-w3tHkdNfSs) mailing list:
