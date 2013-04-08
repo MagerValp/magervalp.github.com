@@ -317,7 +317,7 @@ dd p a {
     margin-top: 0.8em;
 }
 
-nav section {
+nav#index section {
     background-color: rgba(0, 0, 0, 0.05);
     -webkit-border-radius: 5px;
     -moz-border-radius:    5px;
@@ -330,6 +330,68 @@ nav section {
     box-shadow:         inset rgba(0, 0, 0, 0.2) 0 1px 0, inset rgb(255, 255, 255) 0 -1px 0;
 }
 
+
+/* Top navigation. */
+
+#topnav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+#topnav nav {
+    display: block;
+    max-width: 840px;
+    margin: 0 auto;
+    background: #9cd;
+    background: -webkit-gradient(linear,
+                                 50% 0%,
+                                 50% 100%,
+                                 color-stop(0%, #9cd),
+                                 color-stop(100%, #7bc));
+    background: -webkit-linear-gradient(#9cd, #7bc);
+    background:    -moz-linear-gradient(#9cd, #7bc);
+    background:      -o-linear-gradient(#9cd, #7bc);
+    background:     -ms-linear-gradient(#9cd, #7bc);
+    background:         linear-gradient(#9cd, #7bc);
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius:    4px;
+    -ms-border-radius:     4px;
+    -o-border-radius:      4px;
+    border-radius:         4px;
+    -webkit-border-bottom-left-radius:  8px;
+    -moz-border-radius-bottomleft:      8px;
+    -ms-border-bottom-left-radius:      8px;
+    -o-border-bottom-left-radius:       8px;
+    border-bottom-left-radius:          8px;
+    -webkit-border-bottom-right-radius: 8px;
+    -moz-border-radius-bottomright:     8px;
+    -ms-border-bottom-right-radius:     8px;
+    -o-border-bottom-right-radius:      8px;
+    border-bottom-right-radius:         8px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 1px 3px;
+    -moz-box-shadow:    rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 1px 3px;
+    box-shadow:         rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 1px 3px;
+    font: 11px/1.8 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#topnav nav a {
+    padding-left: 10px;
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.5) 0 1px 1px;
+    font-weight: bold;
+}
+
+#topnav nav a:first-child {
+    margin-left: 6px;
+}
+
+#topnav nav a + a {
+    margin-left: 10px;
+    border-left: 1px solid #7ab;
+}
 
 /* Post navigation. */
 
@@ -381,11 +443,28 @@ code.in {
         -moz-box-shadow:    none;
         box-shadow:         none;
         width: 100%;
+        margin-top: 21px;
     }
     #index, article {
         padding: 10px 20px;
     }
-
+    
+    header {
+        -webkit-border-radius: 0;
+        -moz-border-radius:    0;
+        -ms-border-radius:     0;
+        -o-border-radius:      0;
+        border-radius:         0;
+    }
+    
+    #topnav nav {
+        -webkit-border-radius: 0;
+        -moz-border-radius:    0;
+        -ms-border-radius:     0;
+        -o-border-radius:      0;
+        border-radius:         0;
+    }
+    
     footer {
         -webkit-border-radius: 0;
         -moz-border-radius:    0;
