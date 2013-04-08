@@ -5,10 +5,10 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>MagerValp</title>
- <link href="http://magervalp.github.com/atom.xml" rel="self"/>
- <link href="http://magervalp.github.com/"/>
+ <link href="http://magervalp.github.io/atom.xml" rel="self"/>
+ <link href="http://magervalp.github.io/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://magervalp.github.com/</id>
+ <id>http://magervalp.github.io/</id>
  <author>
    <name>Per Olofsson</name>
    <email>{{ site.email }}</email>
@@ -17,9 +17,9 @@ layout: nil
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title | xml_escape }}</title>
-   <link href="http://magervalp.github.com{{ post.url }}"/>
+   <link href="http://magervalp.github.io{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://magervalp.github.com{{ post.id }}</id>
+   <id>http://magervalp.github.io{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
