@@ -8,7 +8,7 @@ The usual scenario when you're in a kerberized environment is that your users ge
 
 <pre><code class="prettyprint lang-sh">#!/bin/bash
 #
-# This script assumes 10.7+, and must execute as root.
+# This script requires 10.7+ and root privileges.
 
 # Initialize Kerberos if needed.
 if ! klist -t 2>/dev/null; then
@@ -19,7 +19,9 @@ if ! klist -t 2>/dev/null; then
 
     # Read the computer account password from the system keychain.
     declare -r SKC="/Library/Keychains/System.keychain"
-    declare -r ADCOMPPWD=$(security find-generic-password -w -s "$ADNODE" "$SKC")
+    declare -r ADCOMPPWD=$(security find-generic-password -g -s "$ADNODE" "$SKC" 2>&1 >/dev/null | cut -d\" -f2)
+    # 10.8+ supports -w:
+    #declare -r ADCOMPPWD=$(security find-generic-password -w -s "$ADNODE" "$SKC")
 
     # Use the computer account to authenticate and get a Kerberos TGT.
     echo "$ADCOMPPWD" | kinit --password-file=STDIN "$ADCOMPACCT"
@@ -30,3 +32,5 @@ mount_smbfs //sharedfiles.server.com/SharedFolder /tmp/sharedfolder
 curl --negotiate -u : http://server.example.com/protectedresource
 </code>
 </pre>
+
+**Update:** Fixed `security find-generic-password` which doesn't accept -w on 10.7, thanks [@RegalWeasel](https://twitter.com/RegalWeasel/status/337288903570644992).
