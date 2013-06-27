@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400italic,900italic,400,900);
 html {
     background: #6C7989;
     background: #6c7989 -webkit-gradient(linear,
@@ -16,7 +16,7 @@ html {
 body {
     padding: 50px 0;
     margin: 0;
-    font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 14px/1.6 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
     font-weight: 300;
     background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAAUdEVYdENyZWF0aW9uIFRpbWUAMy82LzEygrTcTAAAAFRJREFUSIljfPDggZRf5RIGGNjUHsNATz6jXmSL1Kb2GLiAX+USBnrymRgGGDCORgFmoNAXjEbBaBSMRsFoFIxGwWgUjEbBaBSMRsFoFIxGwWgUAABYNujumib3wAAAAABJRU5ErkJggg==') fixed;
@@ -162,6 +162,13 @@ header .avatar:before {
     -o-border-radius:      0 0 8px 8px;
     border-radius:         0 0 8px 8px;
     position: relative;
+}
+
+article a {
+    text-decoration: underline;
+}
+nav a {
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -424,7 +431,15 @@ code.in {
     -o-border-radius:      3px;
     border-radius:         3px;
 }
-
+code em {
+    color: #f84;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    font-style: italic;
+}
 
 /* Small screen adjustments. */
 
