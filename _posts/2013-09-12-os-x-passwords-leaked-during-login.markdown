@@ -14,7 +14,7 @@ Apple has released [10.8.5](http://support.apple.com/kb/DL1675) [(combo)](http:/
 
 ### CVE-ID
 
-[CVE-2013-1030](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1030)
+[CVE-2013-1030](http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-1030) ([Apple's summary](http://support.apple.com/kb/HT5880))
 
 
 ## Background
