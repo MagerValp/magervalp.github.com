@@ -20,12 +20,12 @@ if ! klist -t 2>/dev/null; then
     # Read the computer account password from the system keychain.
     declare -r SKC="/Library/Keychains/System.keychain"
     declare -r TEMPFILE=$(mktemp -t kinitpwd)
-    security find-generic-password -g -s "$ADNODE" "$SKC" 2>&1 >/dev/null | cut -d\" -f2 > "$TEMPFILE"
+    security find-generic-password -g -s "$ADNODE" "$SKC" 2>&amp;1 >/dev/null | cut -d\" -f2 > "$TEMPFILE"
     # 10.8+ supports -w:
     #security find-generic-password -w -s "$ADNODE" "$SKC" > "$TEMPFILE"
 
     # Use the computer account to authenticate and get a Kerberos TGT.
-    kinit --password-file=STDIN "$ADCOMPACCT" < "$TEMPFILE"
+    kinit --password-file=STDIN "$ADCOMPACCT" &lt; "$TEMPFILE"
     rm -f "$TEMPFILE"
 fi
 
