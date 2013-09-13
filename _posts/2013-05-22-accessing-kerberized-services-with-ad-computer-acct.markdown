@@ -37,4 +37,4 @@ curl --negotiate -u : http://server.example.com/protectedresource
 
 **Update:** Fixed `security find-generic-password` which doesn't accept -w on 10.7, thanks [@RegalWeasel](https://twitter.com/RegalWeasel/status/337288903570644992).
 
-**Update 2:** Fixed [ironic](2013-09-13-irony-is-a-b) exposure of computer account password in process table.
+**Update 2:** Fixed [ironic](/2013/09/13/irony-is-a-b.html) exposure of computer account password in process table.
