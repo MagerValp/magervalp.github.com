@@ -19,12 +19,14 @@ if ! klist -t 2>/dev/null; then
 
     # Read the computer account password from the system keychain.
     declare -r SKC="/Library/Keychains/System.keychain"
-    declare -r ADCOMPPWD=$(security find-generic-password -g -s "$ADNODE" "$SKC" 2>&1 >/dev/null | cut -d\" -f2)
+    declare -r TEMPFILE=$(mktemp -t kinitpwd)
+    security find-generic-password -g -s "$ADNODE" "$SKC" 2>&1 >/dev/null | cut -d\" -f2 > "$TEMPFILE"
     # 10.8+ supports -w:
-    #declare -r ADCOMPPWD=$(security find-generic-password -w -s "$ADNODE" "$SKC")
+    #security find-generic-password -w -s "$ADNODE" "$SKC" > "$TEMPFILE"
 
     # Use the computer account to authenticate and get a Kerberos TGT.
-    echo "$ADCOMPPWD" | kinit --password-file=STDIN "$ADCOMPACCT"
+    kinit --password-file=STDIN "$ADCOMPACCT" < "$TEMPFILE"
+    rm -f "$TEMPFILE"
 fi
 
 # Access services with Kerberos credentials.
@@ -34,3 +36,5 @@ curl --negotiate -u : http://server.example.com/protectedresource
 </pre>
 
 **Update:** Fixed `security find-generic-password` which doesn't accept -w on 10.7, thanks [@RegalWeasel](https://twitter.com/RegalWeasel/status/337288903570644992).
+
+**Update 2:** Fixed [ironic](2013-09-13-irony-is-a-b) exposure of computer account password in process table.
