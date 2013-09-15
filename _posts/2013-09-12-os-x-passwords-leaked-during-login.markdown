@@ -28,7 +28,7 @@ I was writing a script today to automatically mount shared folders for our users
 done</code>
 </pre>
 
-This confirmed my suspecion that the best option seems to be to wait for `Finder.app` and `Dock.app` to appear, but what nearly caused a [T|N>K](http://www.catb.org/jargon/html/C/CNK.html) were the first snapshots of the process table:
+This confirmed my suspicion that the best option seems to be to wait for `Finder.app` and `Dock.app` to appear, but what nearly caused a [T|N>K](http://www.catb.org/jargon/html/C/CNK.html) were the first snapshots of the process table:
 
 <pre><code class="out">----------------------------------
 /System/Library/CoreServices/FileSyncAgent.app/Contents/MacOS/FileSyncAgent -launchedByLaunchd -PHDPlist

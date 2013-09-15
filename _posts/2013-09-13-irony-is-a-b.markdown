@@ -9,4 +9,4 @@ So yesterday I posted about a vulnerability is OS X where [passwords are leaked 
 <pre><code class="prettyprint lang-sh">echo "$ADCOMPPWD" | kinit --password-file=STDIN "$ADCOMPACCT"</code>
 </pre>
 
-Oh sweet irony. I updated the post with a [fixed version](/2013/05/22/accessing-kerberized-services-with-ad-computer-acct.html) that uses a temporary file instead instead of piping from `echo` for the whole world to see.
+Oh sweet irony. I updated the post with a [fixed version](/2013/05/22/accessing-kerberized-services-with-ad-computer-acct.html) that uses a temporary file instead of piping from `echo` for the whole world to see.
