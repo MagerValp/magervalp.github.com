@@ -1,0 +1,17 @@
+---
+layout: post
+title: AutoDMG
+tags: Mac
+---
+
+Since [InstaDMG](http://code.google.com/p/instadmg/) has issues with 10.9 and [SIC](http://www.mondada.com.au/) is no more I took it upon myself to create a replacement, and the result is [AutoDMG](https://github.com/MagerValp/AutoDMG). It uses the same mechanic as InstaDMG to generate never booted system images, and also applies the latest software updates and installs your own custom packages. The biggest change is that it's a GUI application now:
+
+![Autodmg-0.8-Log](https://f.cloud.github.com/assets/404393/1420666/6dde1438-3fe3-11e3-8fed-b78aa74784a4.png)
+
+Today I'm releasing 0.8 which has matured a lot over the previous releases, and it's the first version I feel is ready for serious testing. There are most likely still bugs lurking around which is why I'm not calling it 1.0 just yet, but it's working well here for building images of 10.8.5 and 10.9.
+
+So, please [grab it](https://github.com/MagerValp/AutoDMG/releases) and test it in your workflows. If you have any questions please check out the [documentation](https://github.com/MagerValp/AutoDMG/wiki) first (yes, I wrote some!) and join us in [##osx-server](http://webchat.freenode.net/?channels=##osx-server) to discuss it.
+
+I should also thank [Duncan McCracken](http://www.mondada.com.au/) for showing us how to install OS X on a disk image at [MacSysAdmin](http://docs.macsysadmin.se/2013/2013doc.html), which was the seed that grew into AutoDMG. Also thanks to the unstoppable [Greg Neagle](http://managingosx.wordpress.com/) who came up with the name. Thanks guys!
+
+PS: If anyone's wondering what's up with [CreateUserPkg](http://magervalp.github.io/CreateUserPkg/), there's a beta of 1.2.4 hiding in the [issue tracker](https://github.com/MagerValp/CreateUserPkg/issues/31) that I'm going to package up and release as soon as AutoDMG settles down.
