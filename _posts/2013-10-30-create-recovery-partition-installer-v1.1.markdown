@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create Recovery Partition Installer 1.1
+title: Create Recovery Partition Installer v1.1
 tags: Mac
 ---
 
