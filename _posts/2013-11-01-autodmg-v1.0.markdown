@@ -1,0 +1,22 @@
+---
+layout: post
+title: AutoDMG v1.0
+tags: Mac
+---
+
+![AutoDMG 1.0](/images/AutoDMG-1.0.png)
+
+I've received some great feedback during the past few days, but since no major issues have been reported I'm feeling confident enough to release [AutoDMG](https://github.com/MagerValp/AutoDMG) version 1.0.
+
+A big thank you goes out to everyone who helped with the testing.
+
+The changes for 1.0 include:
+
+* Polished UI.
+* Better logging.
+* Fix list of updates being refreshed after profiles updated.
+* Added warnings for deprecated installers.
+* Confirm to quit when building.
+* Added preferences for automatic updates.
+
+You can download 1.0 from the [AutoDMG releases](https://github.com/MagerValp/AutoDMG/releases) page. If you have any questions join us in [##osx-server](http://webchat.freenode.net/?channels=##osx-server) (but please check the [documentation](https://github.com/MagerValp/AutoDMG/wiki) and especially the [FAQ](https://github.com/MagerValp/AutoDMG/wiki/FAQ) first).
