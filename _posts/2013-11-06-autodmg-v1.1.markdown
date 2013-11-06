@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AutoDMG v1.1
-tags: Mac
+tags: Mac AutoDMG
 ---
 
 AutoDMG version 1.1 has been released, with the following changes:

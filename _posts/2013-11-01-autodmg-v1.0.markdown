@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AutoDMG v1.0
-tags: Mac
+tags: Mac AutoDMG
 ---
 
 ![AutoDMG 1.0](/images/AutoDMG-1.0.png)

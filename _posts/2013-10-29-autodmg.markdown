@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AutoDMG
-tags: Mac
+tags: Mac AutoDMG
 ---
 
 Since [InstaDMG](http://code.google.com/p/instadmg/) has issues with 10.9 and [SIC](http://www.mondada.com.au/) is no more I took it upon myself to create a replacement, and the result is [AutoDMG](https://github.com/MagerValp/AutoDMG). It uses the same mechanic as InstaDMG to generate never booted system images, and also applies the latest software updates and installs your own custom packages. The biggest change is that it's a GUI application now:
