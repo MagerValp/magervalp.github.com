@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AutoDMG
+title: AutoDMG v1.1
 tags: Mac
 ---
 
