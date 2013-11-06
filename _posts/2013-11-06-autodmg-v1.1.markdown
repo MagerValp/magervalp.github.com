@@ -12,6 +12,6 @@ AutoDMG version 1.1 has been released, with the following changes:
 
 You can download 1.1 from the [AutoDMG releases](https://github.com/MagerValp/AutoDMG/releases) page. If you have any questions join us in [##osx-server](http://webchat.freenode.net/?channels=##osx-server) (but please check the [documentation](https://github.com/MagerValp/AutoDMG/wiki) and especially the [FAQ](https://github.com/MagerValp/AutoDMG/wiki/FAQ) first).
 
-If you report a bug, please save the log file and attach it to the issue, it's almost impossible to diagnose a problem without it.
+If you report a bug, please save the log file and attach it to the issue, it's almost impossible to diagnose problems without it.
 
 ![AutoDMG save log](/images/AutoDMG-save-log.png)
