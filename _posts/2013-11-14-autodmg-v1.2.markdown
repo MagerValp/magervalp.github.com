@@ -1,0 +1,21 @@
+---
+layout: post
+title: AutoDMG v1.2
+tags: Mac AutoDMG
+---
+
+What a week.
+
+Friday started with the new Retina MacBooks arriving, the ones that can't be downgraded to 10.8. We have a working solution for upgrading machines to Mavericks but we're still not ready with the deployment workflow for 10.9 since we've been spending the last few weeks chasing PHD sync bugs with NetApp. In the middle of getting the 13A2093 and 13A3017 builds ready my Mac Pro decided to keel over and die. It came back to life again, and I guess I should be only thankful for an excuse to get an [Epic Thermos of Power](http://www.apple.com/mac-pro/).
+
+Then on monday DeployStudio flaked out and the Finalize task started using 100% CPU taking down package installs with it. Our Absolute Manage server also decided that it'd had enough and started telling the clients to go away since it needed its beauty sleep.
+
+Tuesday started with a bit of relief as we got some help from Absolute tweaking the server settings, and it's been behaving since. Profile Manager had been coughing and wheezing though and on wednesday it crapped out totally. Today was spent migrating profiles out of Profile Manager and into Absolute Manage, something we'd been planning to do anyway as part of our move to 10.9, just not this week…
+
+Despite all this AutoDMG version 1.2 is out, but only with a few minor changes. Firstly I now set `CM_BUILD=CM_BUILD` which makes `installer` bypass packages' volume checks. This means that you can create machine specific builds (like 13A2093 and 13A3017) without having to run AutoDMG on that particular hardware. It also makes it possible to install packages that are configured to only install on root volumes. This should bring AutoDMG in line with InstaDMG, for better or for worse.
+
+After being prodded by Tuomo Oksakivi I also took a look into why aliases didn't always work with drag & drop. Turns out that when you're working with paths you have to resolve aliases manually, but it was simple enough to fix. The idea here is that if you have a set of packages that you want to include in every image you build, you can create a folder with aliases for easy dragging & dropping. It's not exactly a replacement for InstaDMG catalogs, but it might help you keep your builds a little more organized. I have an idea for image templates, but we'll have to see if I have time to work on it.
+
+But enough rambling. You can download 1.2 from the [AutoDMG releases](https://github.com/MagerValp/AutoDMG/releases) page. If you have any questions join us in [##osx-server](http://webchat.freenode.net/?channels=##osx-server) (but please check the [documentation](https://github.com/MagerValp/AutoDMG/wiki) and especially the [FAQ](https://github.com/MagerValp/AutoDMG/wiki/FAQ) first).
+
+Now I think I deserve [a proper cup of tea](http://www.youtube.com/watch?v=g0Go1odOtRM).
