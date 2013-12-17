@@ -1,0 +1,16 @@
+---
+layout: post
+title: AutoDMG v1.2.1
+tags: Mac AutoDMG
+---
+
+I've been working on implementing caching in AutoDMG, but the bugs kept piling up in the meantime. I decided to break the silence with a small bugfix release:
+
+* Allow renamed InstallESD images (but they still have to match `InstallESD*.dmg`).
+* Fix message regarding deprecated installers on 10.8.
+* Fix a crash if the user's primary GID doesn't have a corresponding group.
+* Fix deletion of multiple additional packages.
+
+I also published new update profiles for 10.9.1 and 10.8.5 earlier today which should be downloaded automatically.
+
+You can download 1.2.1 from the [AutoDMG releases](https://github.com/MagerValp/AutoDMG/releases) page. If you have any questions join us in [##osx-server](http://webchat.freenode.net/?channels=##osx-server) (but please check the [documentation](https://github.com/MagerValp/AutoDMG/wiki) and especially the [FAQ](https://github.com/MagerValp/AutoDMG/wiki/FAQ) first).
