@@ -7,7 +7,7 @@ tags: Mac, Java
 Like many organization we have a few legacy systems that require Java to run, and as much as we'd like to replace them we're not quite there yet. With 7u51 Oracle turned up the default security settings by another notch (undoubtedly a good thing!) and as a result it will no longer allow users to run unsigned applets without a security manifest. Users that have admin privileges can [whitelist applets](https://blogs.oracle.com/java-platform-group/entry/upcoming_exception_site_list_in) themselves, and there are some [creative ways](http://derflounder.wordpress.com/2014/01/16/managing-oracles-java-exception-site-list/) of managing site exceptions, but the officially supported way is to create a Deployment Rule Set. It's not particularly complicated but if you're not a Java developer it involves some tools that you're probably not familiar with (at least I wasn't). Here's my annotated guide to creating, signing, and deploying `DeploymentRuleSet.jar`.
 
 
-1&period; Get a jar signing certificate
+1&#46; Get a jar signing certificate
 ---------------------------------------
 
 First off we'll create a new keystore, and generate a self signed certificate and keypair:
@@ -49,7 +49,7 @@ Paste this into the CA's request form, retrieve the signed certificate, and repl
 You should now have a valid code signing certificate in your keystore, and you're ready to create and sign jar files.
 
 
-2&period; Create DeploymentRuleSet.jar
+2&#46; Create DeploymentRuleSet.jar
 --------------------------------------
 
 Oracle gives you a fair bit of control over how applets should run (refer to the [Deployment Rule Set documentation](http://docs.oracle.com/javase/7/docs/technotes/guides/jweb/security/deployment_rules.html) here), but here's an example of a very simple whitelist for two sites, while leaving everything else to run with the default security policy:
@@ -80,7 +80,7 @@ and finally sign DeploymentRuleSet.jar with the certificate:
 <pre><code class="prompt">$ </code><code class="in">jarsigner -tsa https://timestamp.geotrust.com/tsa DeploymentRuleSet.jar MYORG</code></pre>
 
 
-3&period; Distribute DeploymentRuleSet.jar to your clients
+3&#46; Distribute DeploymentRuleSet.jar to your clients
 ----------------------------------------------------------
 
 With the jar packaged and signed, all that's left to do is distribute it to your clients. No fancy magic is needed here, just drop it in the appropriate path:
@@ -92,7 +92,7 @@ With the jar packaged and signed, all that's left to do is distribute it to your
 | Linux &amp; Solaris | `/etc/.java/deployment/DeploymentRuleSet.jar`
 
 
-4&period; Add a reminder for when the certificate expires
+4&#46; Add a reminder for when the certificate expires
 ---------------------------------------------------------
 
 Remember that certificates expire, and you really don't want to be caught with your pants down. I usually create a calendar reminder 3 months before it expires, with all the details needed to renew it.
