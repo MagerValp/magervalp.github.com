@@ -12,7 +12,7 @@ Like many organization we have a few legacy systems that require Java to run, an
 
 First off we'll create a new keystore, and generate a self signed certificate and keypair:
 
-    $ keytool -genkey -alias MYORG -keyalg RSA -validity 1095 -keystore ~/MYORG_keystore
+<pre><code class="prompt">$ </code><code class="in">keytool -genkey -alias MYORG -keyalg RSA -validity 1095 -keystore ~/MYORG_keystore</code></pre>
 
 `keytool` will ask you to set a password for the keystore, and ask who the certificate is for. The certificate authority we use ([TERENA Certificate Service](https://tcs.sunet.se/info/)) didn't accept DSA keys so I had to set the algorithm to RSA. I also selected a 3 year validity period, in the vain hope that we'll have replaced those old legacy systems by then (hello to myself googling this again in 3 years).
 
@@ -23,28 +23,28 @@ At this point you have two options:
 
 If you get a certificate signed by a trusted authority, create a [CSR](http://en.wikipedia.org/wiki/Certificate_signing_request) that we can send off to a certificate authority:
 
-    $ keytool -certreq -alias MYORG -keystore ~/MYORG_keystore
-    Enter keystore password: 
-    -----BEGIN NEW CERTIFICATE REQUEST-----
-    MIIC+DCCAeACAQAwgYIxCzAJBgNVBAYTAlNFMRUwEwYDVQQIEwxZT1VSIENPVU5UUlkxEjAQBgNV
-    BAcTCVlPVVIgQ0lUWTEaMBgGA1UEChMRWU9VUiBPUkdBTklaQVRJT04xGDAWBgNVBAsTD1lPVVIg
-    REVQQVJUTUVOVDESMBAGA1UEAxMJWU9VUiBOQU1FMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
-    CgKCAQEAqx4D8UoKecvVcSDkJWkLBr94IOb+aZuW704dfteg/scNHtsklAza/Taj/qcQLUnH+/BC
-    QW4HeOibtKMnvtDoz9qo2Cx0O+qJ4+XYXO2wGAorh1nvqbfmFCy/nmgRTJcUgROCW99FI0knlB2Z
-    fkeXSKQuu2wnLadflra/RmFBVcECSigBcQVG4xUBpRjxxIsM84hh0bez1KZgjRW66o62AbFynIsn
-    NsMB11d+1rUmZFVBqFwNcZ+CiKJfpOrBgLxQayRed/Jxhv+IKT95vz7a7czvfTzoopr9OuTqK/rC
-    d3V04744kFFjIUhNahbU4rOZtkr4htMAF17HFe61OaxbUQIDAQABoDAwLgYJKoZIhvcNAQkOMSEw
-    HzAdBgNVHQ4EFgQUgQjjFrERujTjUjlSIl6ia6l47ykwDQYJKoZIhvcNAQELBQADggEBACSH03D+
-    QSDbMp350+nUVgiV1tseInJJLkTfEG3F9lZPnJcdeY4rpb/JUCubmqD58iM5gHojNsrIucyY2Opp
-    PDE5lqD0oth3e48gkTL4VDuMLAk4tyGFVTuWHTGASf3b446qX5eufTJD3ri6bk7mJ8qXt8eDm4uB
-    z5+aNZ4m/Oh/pTOZxcnfXWGmO7yxIGfUDkiROvQm46qZ5pFwE+THNcPqIWCPLoiaEfdVLbQS6/ie
-    KNbVqnG0TtnCnhCnTIdWs2JXpniuMt9bpZs5n2nsOQYq1BxstLh8uQx6VhnFhc2h8lJbaXjC+miD
-    gPfUMYEiUNun30VaYBtfEJQJQlpBbtI=
-    -----END NEW CERTIFICATE REQUEST-----
+<pre><code class="prompt">$ </code><code class="in">keytool -certreq -alias MYORG -keystore ~/MYORG_keystore</code>
+<code class="prompt">Enter keystore password: </code>
+<code class="out">-----BEGIN NEW CERTIFICATE REQUEST-----
+MIIC+DCCAeACAQAwgYIxCzAJBgNVBAYTAlNFMRUwEwYDVQQIEwxZT1VSIENPVU5UUlkxEjAQBgNV
+BAcTCVlPVVIgQ0lUWTEaMBgGA1UEChMRWU9VUiBPUkdBTklaQVRJT04xGDAWBgNVBAsTD1lPVVIg
+REVQQVJUTUVOVDESMBAGA1UEAxMJWU9VUiBOQU1FMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIB
+CgKCAQEAqx4D8UoKecvVcSDkJWkLBr94IOb+aZuW704dfteg/scNHtsklAza/Taj/qcQLUnH+/BC
+QW4HeOibtKMnvtDoz9qo2Cx0O+qJ4+XYXO2wGAorh1nvqbfmFCy/nmgRTJcUgROCW99FI0knlB2Z
+fkeXSKQuu2wnLadflra/RmFBVcECSigBcQVG4xUBpRjxxIsM84hh0bez1KZgjRW66o62AbFynIsn
+NsMB11d+1rUmZFVBqFwNcZ+CiKJfpOrBgLxQayRed/Jxhv+IKT95vz7a7czvfTzoopr9OuTqK/rC
+d3V04744kFFjIUhNahbU4rOZtkr4htMAF17HFe61OaxbUQIDAQABoDAwLgYJKoZIhvcNAQkOMSEw
+HzAdBgNVHQ4EFgQUgQjjFrERujTjUjlSIl6ia6l47ykwDQYJKoZIhvcNAQELBQADggEBACSH03D+
+QSDbMp350+nUVgiV1tseInJJLkTfEG3F9lZPnJcdeY4rpb/JUCubmqD58iM5gHojNsrIucyY2Opp
+PDE5lqD0oth3e48gkTL4VDuMLAk4tyGFVTuWHTGASf3b446qX5eufTJD3ri6bk7mJ8qXt8eDm4uB
+z5+aNZ4m/Oh/pTOZxcnfXWGmO7yxIGfUDkiROvQm46qZ5pFwE+THNcPqIWCPLoiaEfdVLbQS6/ie
+KNbVqnG0TtnCnhCnTIdWs2JXpniuMt9bpZs5n2nsOQYq1BxstLh8uQx6VhnFhc2h8lJbaXjC+miD
+gPfUMYEiUNun30VaYBtfEJQJQlpBbtI=
+-----END NEW CERTIFICATE REQUEST-----</code></pre>
 
 Paste this into the CA's request form, retrieve the signed certificate, and replace the self-signed one:
 
-    $ keytool -importcert -file ~/Downloads/signed_cert.pem -trustcacerts -alias MYORG -keystore ~/MYORG_keystore
+<pre><code class="prompt">$ </code><code class="in">keytool -importcert -file ~/Downloads/signed_cert.pem -trustcacerts -alias MYORG -keystore ~/MYORG_keystore</code></pre>
 
 You should now have a valid code signing certificate in your keystore, and you're ready to create and sign jar files.
 
@@ -73,11 +73,11 @@ Oracle gives you a fair bit of control over how applets should run (refer to the
 
 Then we package ruleset.xml into DeploymentRuleSet.jar:
 
-    $ jar cf DeploymentRuleSet.jar ruleset.xml
+<pre><code class="prompt">$ </code><code class="in">jar cf DeploymentRuleSet.jar ruleset.xml</code></pre>
 
 and finally sign DeploymentRuleSet.jar with the certificate:
 
-    $ jarsigner -tsa https://timestamp.geotrust.com/tsa DeploymentRuleSet.jar MYORG
+<pre><code class="prompt">$ </code><code class="in">jarsigner -tsa https://timestamp.geotrust.com/tsa DeploymentRuleSet.jar MYORG</code></pre>
 
 
 3&period; Distribute DeploymentRuleSet.jar to your clients
