@@ -1,0 +1,95 @@
+---
+layout: post
+title: AutoDMG v1.3
+tags: Mac AutoDMG
+---
+
+Following a few betas to test the waters AutoDMG 1.3 is finally ready for release. For those of you that like building with the GUI the only new feature is that the 32 GB limit is gone as AutoDMG will now automatically create a larger image if you add large packages. The biggest news is for everyone who likes automation and reproducible workflows, since AutoDMG finally has a proper command-line interface. Not that everyone has been sitting idly by, we've recently seen the release of some nice solutions from the folks at [Google](https://code.google.com/p/google-macops/wiki/can_haz_image_manual) and [Adobe](https://github.com/chilcote/stew), and an interesting way of merging [InstaDMG's workflow with AutoDMG](http://www.afp548.com/2014/01/16/instaup2date-autodmg/). My hope is that 1.3 will integrate much smoother in workflows that require building large images, or when you need to build a lot of images repeatedly. The documentation on how to throw away the training wheels is in the wiki:
+
+* [Command-Line Interface](https://github.com/MagerValp/AutoDMG/wiki/Command-Line-Interface)
+* [Templates](https://github.com/MagerValp/AutoDMG/wiki/Templates)
+
+You can download 1.3 from the [AutoDMG releases](https://github.com/MagerValp/AutoDMG/releases) page. If you have any questions join us in [##osx-server](http://webchat.freenode.net/?channels=##osx-server) (but please check the [documentation](https://github.com/MagerValp/AutoDMG/wiki) and especially the [FAQ](https://github.com/MagerValp/AutoDMG/wiki/FAQ) first).
+
+It seems appropriate to end with a screenshot:
+
+<pre><code class="prompt">$ </code><code class="in">cat 10.9.2.adtmpl</code>
+<code class="out prettyprint lang-xml">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;
+&lt;plist version="1.0"&gt;
+&lt;dict&gt;
+    &lt;key&gt;TemplateFormat&lt;/key&gt;
+    &lt;string&gt;1.0&lt;/string&gt;
+    &lt;key&gt;SourcePath&lt;/key&gt;
+    &lt;string&gt;~/Desktop/Install OS X Mavericks.app&lt;/string&gt;
+    &lt;key&gt;OutputPath&lt;/key&gt;
+    &lt;string&gt;~/Desktop/BaseImage-10.9.2-13C64.dmg&lt;/string&gt;
+    &lt;key&gt;VolumeName&lt;/key&gt;
+    &lt;string&gt;Macintosh HD&lt;/string&gt;
+    &lt;key&gt;ApplyUpdates&lt;/key&gt;
+    &lt;true/&gt;
+    &lt;key&gt;AdditionalPackages&lt;/key&gt;
+    &lt;array&gt;
+    &lt;/array&gt;
+    &lt;key&gt;IncludeTemplates&lt;/key&gt;
+    &lt;array&gt;
+    &lt;/array&gt;
+&lt;/dict&gt;
+&lt;/plist&gt;</code>
+<code class="prompt">$ </code><code class="in">/Applications/AutoDMG.app/Contents/MacOS/AutoDMG -l autodmg-10.9.2-20140324.log -L 7 build 10.9.2.adtmpl</code>
+<code class="out">Installer: /Users/admin/Desktop/Install OS X Mavericks.app
+Output Path: /Users/admin/Desktop/BaseImage-10.9.2-13C64.dmg
+Volume Name: Macintosh HD
+Accepted source /Users/admin/Desktop/Install OS X Mavericks.app: Mac OS X 10.9.2 13C64
+Found installer: Mac OS X 10.9.2 13C64
+Update: iBooks Update (14.6 MB)
+Update: BookKit Update (78.5 kB)
+Update: iTunes 11.1.5 (232.7 MB)
+Password for admin: </code><code class="in">********</code>
+<code class="out">Starting build
+Using installer: Mac OS X 10.9.2 13C64
+Using output path: /Users/admin/Desktop/BaseImage-10.9.2-13C64.dmg
+Starting task with 1 phases
+Starting phase: Preparing
+phase: Preparing
+Starting task with 7 phases
+Starting phase: Starting install
+phase: Starting install
+Install task running
+Script phase: sparseimage
+Starting phase: Creating disk image
+phase: Creating disk image
+Script phase: install 0:/private/tmp/dmg.vXAs2G/Packages/OSInstall.mpkg
+Starting phase: Installing OS
+phase: Installing OS
+Script phase: install 1:/Users/admin/Library/Application Support/AutoDMG/Updates/iBooksDelta.pkg
+Starting phase: Installing iBooks Update
+phase: Installing iBooks Update
+Script phase: install 2:/Users/admin/Library/Application Support/AutoDMG/Updates/BookKitDelta.pkg
+Starting phase: Installing BookKit Update
+phase: Installing BookKit Update
+Script phase: install 3:/private/tmp/dmg.XQKgax/Install iTunes.pkg
+Starting phase: Installing iTunes 11.1.5
+phase: Installing iTunes 11.1.5
+Script phase: asr
+Starting phase: Finalizing disk image
+phase: Finalizing disk image
+Starting task with 4 phases
+Starting phase: Finalizing disk image
+phase: Finalizing disk image
+Finalize task running
+Script phase: asr1
+Starting phase: Finalizing disk image
+phase: Finalizing disk image
+Script phase: asr2
+Starting phase: Finalizing disk image
+phase: Finalizing disk image
+Script phase: asr3
+Starting phase: Finalizing disk image
+phase: Finalizing disk image
+Starting task with 1 phases
+Starting phase: Finishing
+phase: Finishing
+Finish
+Build finished successfully, image saved to /Users/admin/Desktop/BaseImage-10.9.2-13C64.dmg
+Build successful</code></pre>
