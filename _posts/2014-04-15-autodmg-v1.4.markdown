@@ -1,0 +1,22 @@
+---
+layout: post
+title: AutoDMG v1.4
+tags: Mac AutoDMG
+---
+
+AutoDMG 1.4 is here, and with its release I consider it feature complete: it now supports every feature that InstaDMG has. The last missing piece of the puzzle was BaseOS caching, but instead of just copying the feature I have a slightly more generalized take on it. You can now use a previously generated image as the source, allowing you to update images as needed or cache them at any point. You'll find the details in [the wiki](https://github.com/MagerValp/AutoDMG/wiki/Updating-Images).
+
+Changes in 1.4:
+
+* Support for using previously generated images as sources.
+* Added Advanced Options window for setting the volume's name and size.
+* Drag & drop apps can be added to additional software, and will be copied to /Applications.
+* Apps and packages can be wrapped in a dmg.
+* You can now load and save of templates from the GUI.
+* The template used to build the image is saved to /var/log inside the image for future reference.
+* Improved error handling should allow saving of the log if the app crashes.
+
+![AutoDMG 1.4](/images/AutoDMG-1.4.png)
+*Cached image as source, advanced aptions, drag & drop app, pkg in dmg, and new crash handler*
+
+You can download 1.4 from the [AutoDMG releases](https://github.com/MagerValp/AutoDMG/releases) page. If you have any questions join us in [##osx-server](http://webchat.freenode.net/?channels=##osx-server) (but please check the [documentation](https://github.com/MagerValp/AutoDMG/wiki) and especially the [FAQ](https://github.com/MagerValp/AutoDMG/wiki/FAQ) first).
