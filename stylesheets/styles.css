@@ -166,6 +166,11 @@ header .avatar:before {
     position: relative;
 }
 
+article > p > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 article a {
     text-decoration: underline;
 }
