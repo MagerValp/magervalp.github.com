@@ -26,7 +26,7 @@ Type "help", "copyright", "credits" or "license" for more information.</code>
 <code class="prompt">... </code><code class="in">    heapq.heappush(tree, value)</code>
 <code class="prompt">... </code><code class="in"></code>                                                            3
 <code class="prompt">>>> </code><code class="in">tree</code>                                                       / \    <i>Each child is</i>
-<code class="out">[3, 4, 7, 6, 8]</code><!--                    -->                             <i>Tree structure:</i>   4   7   <i>smaller than</i>
+<code class="out">[3, 4, 7, 6, 8]</code><!--             -->                             <i>Tree structure:</i>   4   7   <i>smaller than</i>
 <code class="prompt">>>> </code><code class="in">while tree:</code>                                              / \      <i>its parent.</i>
 <code class="prompt">>>> </code><code class="in">    print heapq.heappop(tree)</code>                           6   8
 <code class="prompt">... </code><code class="in"></code>
