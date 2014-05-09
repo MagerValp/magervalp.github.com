@@ -17,6 +17,6 @@ Changes in 1.4:
 * Improved error handling should allow saving of the log if the app crashes.
 
 ![AutoDMG 1.4](/images/AutoDMG-1.4.png)
-*Cached image as source, advanced aptions, drag & drop app, pkg in dmg, and new crash handler*
+*Cached image as source, advanced options, drag & drop app, pkg in dmg, and new crash handler*
 
 You can download 1.4 from the [AutoDMG releases](https://github.com/MagerValp/AutoDMG/releases) page. If you have any questions join us in [##osx-server](http://webchat.freenode.net/?channels=##osx-server) (but please check the [documentation](https://github.com/MagerValp/AutoDMG/wiki) and especially the [FAQ](https://github.com/MagerValp/AutoDMG/wiki/FAQ) first).
