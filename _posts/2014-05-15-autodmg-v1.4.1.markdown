@@ -1,0 +1,14 @@
+---
+layout: post
+title: AutoDMG v1.4.1
+tags: Mac AutoDMG
+---
+
+AutoDMG 1.4.1 is out:
+
+* Added support for [variables](https://github.com/MagerValp/AutoDMG/wiki/Templates#variables) in templates (CLI only).
+* Fixed a crash when trying to mount certain dmgs.
+
+Thanks to [Anthony Reimer](https://github.com/jazzace) for finding the dmg bug!
+
+You can download 1.4.1 from the [AutoDMG releases](https://github.com/MagerValp/AutoDMG/releases) page. If you have any questions join us in [##osx-server](http://webchat.freenode.net/?channels=##osx-server) (but please check the [documentation](https://github.com/MagerValp/AutoDMG/wiki) and especially the [FAQ](https://github.com/MagerValp/AutoDMG/wiki/FAQ) first).
