@@ -428,6 +428,7 @@ code em {
     }
     #index, article {
         padding: 10px 20px;
+        font-size: 13px;
     }
     
     header {
@@ -462,6 +463,13 @@ code em {
     dd {
         clear: both;
         margin: 0px;
+    }
+    
+    code, pre {
+        font-size: 11px;
+    }
+    code.in {
+        padding: 0px;
     }
 }
 @media print, screen and (max-width:580px) {
