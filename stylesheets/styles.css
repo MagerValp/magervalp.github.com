@@ -1,4 +1,31 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400italic,900italic,400,900);
+/* Roman. */
+@font-face {
+  font-family: 'FiraSans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('FiraSans-Book'), url(/stylesheets/FiraSans-Book.otf) format('truetype');
+}
+@font-face {
+  font-family: 'FiraSans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('FiraSans-Bold'), url(/stylesheets/FiraSans-Bold.otf) format('truetype');
+}
+
+/* Italic. */
+@font-face {
+  font-family: 'FiraSans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('FiraSans-BookItalic'), url(/stylesheets/FiraSans-BookItalic.otf) format('truetype');
+}
+@font-face {
+  font-family: 'FiraSans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('FiraSans-BoldItalic'), url(/stylesheets/FiraSans-BoldItalic.otf) format('truetype');
+}
+
 html {
     background: #6C7989;
     background: #6c7989 -webkit-gradient(linear,
@@ -16,7 +43,7 @@ html {
 body {
     padding: 50px 0;
     margin: 0;
-    font: 14px/1.6 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 16px/1.7 FiraSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: auto;
     color: #333;
@@ -105,7 +132,7 @@ header p.view a {
     color: #06c;
 }
 header p.view small {
-    font-weight: 400;
+    font-weight: 300;
 }
 
 header .avatar {
@@ -146,7 +173,7 @@ header .avatar:before {
 
 #index, article {
     padding: 15px 20px;
-    font-size: 15px;
+    font-size: 16px;
     border-top: 1px solid #fff;
     background: -webkit-gradient(linear,
                                  50% 0%,
@@ -279,7 +306,7 @@ footer {
 }
 footer a {
     color: #fff;
-    font-weight: bold;
+    font-weight: 700;
 }
 footer p {
     float: left;
@@ -388,14 +415,14 @@ nav#index section {
     -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 1px 3px;
     -moz-box-shadow:    rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 1px 3px;
     box-shadow:         rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 1px 3px;
-    font: 11px/1.8 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: 11px/1.8 FiraSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #topnav nav a {
     padding-left: 10px;
     color: #fff;
     text-shadow: rgba(0, 0, 0, 0.5) 0 1px 1px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 #topnav nav a:first-child {
