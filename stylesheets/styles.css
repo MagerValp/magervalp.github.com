@@ -48,9 +48,7 @@ body {
     margin: 0 auto;
     background: #DEDEDE;
     border-radius: 8px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;
-    -moz-box-shadow:    rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;
-    box-shadow:         rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;
 }
 
 header, #index, article, footer {
@@ -123,9 +121,7 @@ header .avatar {
     background-image: url("/images/avatar-40x40.png");
     padding: 1px 0;
     border-radius: 5px;
-    -webkit-box-shadow: inset rgba(255, 255, 255, 0.45) 0 1px 0, inset rgba(0, 0, 0, 0.2) 0 -1px 0;
-    -moz-box-shadow:    inset rgba(255, 255, 255, 0.45) 0 1px 0, inset rgba(0, 0, 0, 0.2) 0 -1px 0;
-    box-shadow:         inset rgba(255, 255, 255, 0.45) 0 1px 0, inset rgba(0, 0, 0, 0.2) 0 -1px 0;
+    box-shadow: inset rgba(255, 255, 255, 0.45) 0 1px 0, inset rgba(0, 0, 0, 0.2) 0 -1px 0;
 }
 header .avatar:before {
     content: '';
@@ -137,9 +133,7 @@ header .avatar:before {
     bottom: -6px;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0, inset rgba(255, 255, 255, 0.7) 0 -1px 0;
-    -moz-box-shadow:    rgba(0, 0, 0, 0.2) 0 -1px 0, inset rgba(255, 255, 255, 0.7) 0 -1px 0;
-    box-shadow:         rgba(0, 0, 0, 0.2) 0 -1px 0, inset rgba(255, 255, 255, 0.7) 0 -1px 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0, inset rgba(255, 255, 255, 0.7) 0 -1px 0;
 }
 
 
@@ -322,9 +316,7 @@ nav#index section {
     background-color: rgba(0, 0, 0, 0.05);
     border-radius: 5px;
     padding: 4px 8px 0px 8px;
-    -webkit-box-shadow: inset rgba(0, 0, 0, 0.2) 0 1px 0, inset rgb(255, 255, 255) 0 -1px 0;
-    -moz-box-shadow:    inset rgba(0, 0, 0, 0.2) 0 1px 0, inset rgb(255, 255, 255) 0 -1px 0;
-    box-shadow:         inset rgba(0, 0, 0, 0.2) 0 1px 0, inset rgb(255, 255, 255) 0 -1px 0;
+    box-shadow: inset rgba(0, 0, 0, 0.2) 0 1px 0, inset rgb(255, 255, 255) 0 -1px 0;
 }
 
 
@@ -348,9 +340,7 @@ nav#index section {
     border-radius: 4px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 1px 3px;
-    -moz-box-shadow:    rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 1px 3px;
-    box-shadow:         rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 1px 3px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 1px 3px;
     font: 11px/1.8 FiraSans, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -416,9 +406,7 @@ code em {
 
     .wrapper {
         border-radius: 0;
-        -webkit-box-shadow: none;
-        -moz-box-shadow:    none;
-        box-shadow:         none;
+        box-shadow: none;
         width: 100%;
         margin-top: 21px;
     }
