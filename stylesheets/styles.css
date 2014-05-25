@@ -28,15 +28,7 @@
 
 html {
     background: #6C7989;
-    background: #6c7989 -webkit-gradient(linear,
-                                         50% 0%,
-                                         50% 100%,
-                                         color-stop(0%, #6c7989),
-                                         color-stop(100%, #434b55)) fixed;
     background: #6c7989 -webkit-linear-gradient(#6c7989, #434b55) fixed;
-    background: #6c7989    -moz-linear-gradient(#6c7989, #434b55) fixed;
-    background: #6c7989      -o-linear-gradient(#6c7989, #434b55) fixed;
-    background: #6c7989     -ms-linear-gradient(#6c7989, #434b55) fixed;
     background: #6c7989         linear-gradient(#6c7989, #434b55) fixed;
 }
 
@@ -91,15 +83,7 @@ header {
     -o-border-radius:      8px 8px 0 0;
     border-radius:         8px 8px 0 0;
     background: #C6EAFA;
-    background: -webkit-gradient(linear,
-                                 50% 0%,
-                                 50% 100%,
-                                 color-stop(0%, #ddfbfc),
-                                 color-stop(100%, #c6eafa));
     background: -webkit-linear-gradient(#ddfbfc, #c6eafa);
-    background:    -moz-linear-gradient(#ddfbfc, #c6eafa);
-    background:      -o-linear-gradient(#ddfbfc, #c6eafa);
-    background:     -ms-linear-gradient(#ddfbfc, #c6eafa);
     background:         linear-gradient(#ddfbfc, #c6eafa);
     position: relative;
     padding: 15px 20px;
@@ -175,15 +159,7 @@ header .avatar:before {
     padding: 15px 20px;
     font-size: 16px;
     border-top: 1px solid #fff;
-    background: -webkit-gradient(linear,
-                                 50% 0%,
-                                 50% 700,
-                                 color-stop(0%, #fafafa),
-                                 color-stop(100%, #eeeeee));
     background: -webkit-linear-gradient(#fafafa, #eeeeee 700px);
-    background:    -moz-linear-gradient(#fafafa, #eeeeee 700px);
-    background:      -o-linear-gradient(#fafafa, #eeeeee 700px);
-    background:     -ms-linear-gradient(#fafafa, #eeeeee 700px);
     background:         linear-gradient(#fafafa, #eeeeee 700px);
     -webkit-border-radius: 0 0 8px 8px;
     -moz-border-radius:    0 0 8px 8px;
@@ -386,15 +362,7 @@ nav#index section {
     max-width: 840px;
     margin: 0 auto;
     background: #9cd;
-    background: -webkit-gradient(linear,
-                                 50% 0%,
-                                 50% 100%,
-                                 color-stop(0%, #9cd),
-                                 color-stop(100%, #7bc));
     background: -webkit-linear-gradient(#9cd, #7bc);
-    background:    -moz-linear-gradient(#9cd, #7bc);
-    background:      -o-linear-gradient(#9cd, #7bc);
-    background:     -ms-linear-gradient(#9cd, #7bc);
     background:         linear-gradient(#9cd, #7bc);
 
     -webkit-border-radius: 4px;
