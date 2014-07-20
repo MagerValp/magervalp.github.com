@@ -6,7 +6,7 @@ tags: Commodore, coding, 6502, C, assembler
 
 [Last time](/2014/05/02/priority-qeue-in-asm.html) I implemented a priority queue using a heap, and this time I'm going to use it as the basis of implementing [A\* pathfinding](http://theory.stanford.edu/~amitp/GameProgramming/) for my RPG (*[1](/images/Mutant-Combat.png) [2](/images/Mutant-World.png)*). As always the code is available on GitHub: [AsmAstar](https://github.com/MagerValp/AsmAstar).
 
-I'm not going to try to explain the algorithm here, but I'm going to focus on how I implemented it and the optimizations I chose. I recommend reading [Amit Patel's Introduction to A\*](http://theory.stanford.edu/~amitp/GameProgramming/AStarComparison.html) as it's the best article on A\* I've found.
+I'm not going to try to explain the algorithm here, but I'm going to focus on how I implemented it and the optimizations I chose. I recommend reading [Amit Patel's Introduction to A\*](http://theory.stanford.edu/~amitp/GameProgramming/AStarComparison.html) as it's the best article on A\* I've found. **Update:** Amit wrote a new (interactive!) [Introduction to A\*](http://www.redblobgames.com/pathfinding/a-star/introduction.html).
 
 
 <img src="/images/AstarPy.png" alt="Astar.py" style="float:right; margin-left: 15px">
