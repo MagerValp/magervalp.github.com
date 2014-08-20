@@ -1,0 +1,15 @@
+---
+layout: post
+title: AutoDMG v1.4.4 and 1.5b
+tags: Mac AutoDMG
+---
+
+Thanks to our great community a few more AutoDMG bugs have been discovered. I rolled up the fixes today and released 1.4.4:
+
+* Fixed crash when user has unicode characters in primary group name.
+* Better error handling when downloads fail or additional packages are moved.
+* Verify passwords in CLI to avoid failed builds.
+
+I've also released a new beta of 1.5 for Yosemite testers. It contains the same fixes as 1.4.4.
+
+You can download 1.4.4 and 1.5b from the [AutoDMG releases](https://github.com/MagerValp/AutoDMG/releases) page. If you have any questions join us in [##osx-server](http://webchat.freenode.net/?channels=##osx-server) (but please check the [documentation](https://github.com/MagerValp/AutoDMG/wiki) and especially the [FAQ](https://github.com/MagerValp/AutoDMG/wiki/FAQ) first).
