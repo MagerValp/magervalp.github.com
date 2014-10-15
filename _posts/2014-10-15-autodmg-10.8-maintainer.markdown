@@ -8,4 +8,4 @@ Since I no longer support 10.8 at work I will not be able to stay on top of upda
 
 As always I will do my best to keep up with the latest release of OS X, and the one before, but pull requests are most welcome there too.
 
-Also, I've uploaded a new beta of AutoDMG 1.5. I expect this build to become the final release version and I'm just waiting for the final GM to drop.
+Also, I've uploaded a [new beta of AutoDMG 1.5](https://github.com/MagerValp/AutoDMG/releases). I expect this build to become the final release version and I'm just waiting for the final GM to drop.
