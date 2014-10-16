@@ -1,0 +1,14 @@
+---
+layout: post
+title: AutoDMG v1.5
+tags: Mac AutoDMG
+---
+
+Apple just released 10.10, and here's AutoDMG to go with it. Changelog is nice and short:
+
+* Added 10.10 support.
+* Removed 10.7 support.
+
+Happy Yosemite day!
+
+You can download 1.5 from the [AutoDMG releases](https://github.com/MagerValp/AutoDMG/releases) page. If you have any questions join us in [##osx-server](http://webchat.freenode.net/?channels=##osx-server) (but please check the [documentation](https://github.com/MagerValp/AutoDMG/wiki) and especially the [FAQ](https://github.com/MagerValp/AutoDMG/wiki/FAQ) first).
