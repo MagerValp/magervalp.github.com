@@ -1,0 +1,14 @@
+---
+layout: post
+title: AutoDMG v1.5.3
+tags: Mac AutoDMG
+---
+
+I have released AutoDMG 1.5 which contains the following bugfixes:
+
+* Include custom volume name when saving a template from the GUI.
+* Fixed resolving of certain aliases on 10.10.
+* Fixed error message when log file couldn't be opened.
+* Fixed building when a mobile account is roaming and can't look up its username.
+
+You can download 1.5.3 from the [AutoDMG releases](https://github.com/MagerValp/AutoDMG/releases) page. If you have any questions join us in [##osx-server](http://webchat.freenode.net/?channels=##osx-server) (but please check the [documentation](https://github.com/MagerValp/AutoDMG/wiki) and especially the [FAQ](https://github.com/MagerValp/AutoDMG/wiki/FAQ) first).
