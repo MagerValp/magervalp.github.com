@@ -23,6 +23,11 @@ You can download the game from its CSDb entry: [Ultima IV Remastered](http://csd
 Scanned documentation can be found here: [Ultima IV Documentation](https://paradroid.automac.se/u4/docs.html).
 
 
+## Screenshots
+
+You can download screenshots of U4 Remastered and the original for comparison here: [Ultima IV Remastered screenshots](/data/u4screenshots.zip).
+
+
 ## Game Changes
 
 
