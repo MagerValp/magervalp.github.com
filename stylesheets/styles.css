@@ -100,6 +100,9 @@ figcaption {
     text-align: center;
     margin-top: 1em;
 }
+figcaption em {
+    font-weight: bold;
+}
 figure h1 {
     text-align: center;
     margin-top: 1em;
