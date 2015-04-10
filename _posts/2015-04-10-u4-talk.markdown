@@ -1,0 +1,7 @@
+---
+layout: post
+title: Ultima IV Dialogue
+tags: Ultima, C64, Amiga, DOS, Apple2
+---
+
+One step on the road to [remastering Ultima IV](/2015/03/30/u4-remastered.html) was extracting all dialogue from various ports and looking at the differences. I have published the json dumps, my tools, a comparision, and a full changelog [on GitHub](https://github.com/MagerValp/u4talk).
