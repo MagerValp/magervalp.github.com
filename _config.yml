@@ -3,3 +3,4 @@ source: .
 destination: ./_site
 email: magervalp@fastmail.fm
 markdown: kramdown
+paginate: 5

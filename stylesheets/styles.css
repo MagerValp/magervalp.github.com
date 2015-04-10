@@ -197,6 +197,37 @@ nav a {
     text-decoration: none;
 }
 
+
+/* Pagination. */
+
+#pagination {
+    display: table;
+    width: 100%;
+}
+
+#pagination section {
+    display: table-cell;
+}
+
+#pagination .previous {
+    text-align: left;
+    width: 25%;
+}
+#pagination .middle {
+    text-align: center;
+    width: 50%;
+}
+#pagination .next {
+    text-align: right;
+    width: 25%;
+}
+
+#pagination span, #pagination span {
+    opacity: 0.2;
+}
+
+
+
 h1, h2, h3, h4, h5, h6 {
     color: #222;
     padding: 0;
@@ -350,7 +381,7 @@ dd p a {
     margin-top: 0.8em;
 }
 
-nav#index section {
+nav#index > section {
     background-color: rgba(0, 0, 0, 0.05);
     border-radius: 5px;
     padding: 4px 8px 0px 8px;
@@ -400,7 +431,7 @@ nav#index section {
 
 /* Post navigation. */
 
-nav .next {
+nav#postnav .next {
     float: right;
 }
 
