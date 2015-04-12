@@ -28,6 +28,11 @@ Scanned documentation can be found here: [Ultima IV Documentation](https://parad
 You can download screenshots of U4 Remastered and the original for comparison here: [Ultima IV Remastered screenshots](/data/u4screenshots.zip).
 
 
+## Source Code
+
+The source code is available [here](/2015/04/12/u4-remastered-on-github.html).
+
+
 ## Game Changes
 
 
