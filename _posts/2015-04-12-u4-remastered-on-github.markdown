@@ -12,4 +12,4 @@ For C64 programmers there are some reusable parts like the IFFL and EasyFlash lo
 
 My work should also be portable to the Apple II and Atari versions if anyone is up for it, and the dialogue fixes should be adaptable to the DOS/Amiga/ST versions as well.
 
-Finally, for the curious I'll be keeping continued bugfixing and development on GitHub if you want to follow along. I'll start moving my todo list into the project's [issue tracker](https://github.com/MagerValp/u4remastered/issues)] later today.
+Finally, for the curious I'll be keeping continued bugfixing and development on GitHub if you want to follow along. I'll start moving my todo list into the project's [issue tracker](https://github.com/MagerValp/u4remastered/issues) later today.
