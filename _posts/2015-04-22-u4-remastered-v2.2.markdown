@@ -26,6 +26,8 @@ Users from the other 6502 platforms have also shown some interest in remastered 
 * Fixed stack handling for main menu, when being attacked by monsters, when dying, and the end game. This hopefully eliminates any crashes to the ready prompt.
 * The avoid combat trainer now works in dungeons too.
 
+For older changes see the full [changelog](https://raw.githubusercontent.com/MagerValp/u4remastered/master/Changelog.txt).
+
 
 ## Download & Source Code
 
