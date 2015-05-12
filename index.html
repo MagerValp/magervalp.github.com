@@ -11,32 +11,6 @@ title: MagerValp's Blog
 
 <nav id="index">
 
-  <nav id="pagination">
-    <section class="previous">
-      {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}">&laquo; Newer</a>
-      {% else %}
-        <span>&laquo; Newer</span>
-      {% endif %}
-    </section>
-
-    <section class="middle">
-      {% if paginator.page == 1 %}
-        <h3>Latest Articles</h3>
-      {% else %}
-        <h3>Page: {{ paginator.page }} of {{ paginator.total_pages }}</h3>
-      {% endif %}
-    </section>
-  
-    <section class="next">
-      {% if paginator.next_page %}
-        <a href="{{ paginator.next_page_path }}">Older &raquo;</a>
-      {% else %}
-        <span>Older &raquo;</span>
-      {% endif %}
-    </section>
-  </nav>
-
   {% for post in paginator.posts %}
     <section>
       <dl>
@@ -50,5 +24,27 @@ title: MagerValp's Blog
       </dl>
     </section>
   {% endfor %}
+
+  <nav id="pagination">
+    <section class="previous">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}">&laquo; Newer</a>
+      {% else %}
+        <span>&laquo; Newer</span>
+      {% endif %}
+    </section>
+
+    <section class="middle">
+      <h3>Page: {{ paginator.page }} of {{ paginator.total_pages }}</h3>
+    </section>
+  
+    <section class="next">
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}">Older &raquo;</a>
+      {% else %}
+        <span>Older &raquo;</span>
+      {% endif %}
+    </section>
+  </nav>
 
 </nav>
