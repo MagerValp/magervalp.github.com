@@ -15,7 +15,7 @@ I'm proud to announce that my remastered port of Ultima IV for the C64 has been 
 
 ## Download
 
-You can download the game from its CSDb entry: [Ultima IV Remastered v2.1](http://csdb.dk/release/index.php?id=137617).
+You can download the game from its CSDb entry: [Ultima IV Remastered v2.2.1](http://csdb.dk/release/index.php?id=138772).
 
 
 ## Documentation

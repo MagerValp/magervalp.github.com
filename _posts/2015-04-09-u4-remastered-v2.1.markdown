@@ -31,7 +31,7 @@ A big thank you to all who sent me bug reports and posted feedback, keep it comi
 
 ## Download
 
-You can download the game from its CSDb entry: [Ultima IV Remastered v2.1](http://csdb.dk/release/index.php?id=137617).
+You can download the game from its CSDb entry: [Ultima IV Remastered v2.2.1](http://csdb.dk/release/index.php?id=138772).
 
 
 ### Known Bugs
