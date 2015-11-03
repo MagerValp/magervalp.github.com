@@ -1,0 +1,9 @@
+---
+layout: post
+title: AutoDSNBI 1.1
+tags: Mac DeployStudio
+---
+
+I updated AutoDSNBI to support DeployStudio 1.6.17. Big thanks to Rich Trouton for pointing out the new sysbuilder script. Download 1.1 from the new repo here:
+
+* [AutoDSNBI 1.1](https://github.com/MagerValp/AutoDSNBI)
