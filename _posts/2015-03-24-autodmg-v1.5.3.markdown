@@ -4,7 +4,7 @@ title: AutoDMG v1.5.3
 tags: Mac AutoDMG
 ---
 
-I have released AutoDMG 1.5 which contains the following bugfixes:
+I have released AutoDMG 1.5.3 which contains the following bugfixes:
 
 * Include custom volume name when saving a template from the GUI.
 * Fixed resolving of certain aliases on 10.10.
