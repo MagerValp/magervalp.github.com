@@ -13,4 +13,4 @@ Some of the changes I've planned for AutoDMG 1.6 are taking way too long, so aft
 * Disable profile update checking while images build.
 * Fixed handling of large error messages from the build script.
 
-You can download 1.5.4 from the [AutoDMG releases](https://github.com/MagerValp/AutoDMG/releases) page. If you have questions or need help, you can join us in `#autodmg` on [Slack MacAdmins](https://macadmins.org) (but please check the [documentation](https://github.com/MagerValp/AutoDMG/wiki) and especially the [FAQ](https://github.com/MagerValp/AutoDMG/wiki/FAQ) first).
+You can download 1.5.4 from the [AutoDMG releases](https://github.com/MagerValp/AutoDMG/releases) page. If you have questions or need help, you can join us in [`#autodmg`](https://macadmins.slack.com/archives/autodmg) on [Slack MacAdmins](http://macadmins.org) (but please check the [documentation](https://github.com/MagerValp/AutoDMG/wiki) and especially the [FAQ](https://github.com/MagerValp/AutoDMG/wiki/FAQ) first).
