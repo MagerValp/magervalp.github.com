@@ -4,3 +4,5 @@ destination: ./_site
 email: magervalp@fastmail.fm
 markdown: kramdown
 paginate: 5
+gems:
+  - jekyll-seo-tag
