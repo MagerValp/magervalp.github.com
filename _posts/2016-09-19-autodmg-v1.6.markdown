@@ -1,0 +1,18 @@
+---
+layout: post
+title: AutoDMG v1.6
+tags: Mac AutoDMG
+---
+
+Just in time for macOS Sierra we have AutoDMG 1.6:
+
+* Added 10.12 support.
+* Removed 10.8 support.
+* AutoDMG will not try to remount already mounted images, fixing 10.12 installer.
+* Added advanced option to skip asr imagescan (thanks @timsutton).
+* AutoDMG will not relaunch on login (thanks @nmcspadden).
+* Fixed volume size setting not being saved to templates (thanks @timsutton).
+* Fixed handling of relative package paths on the command line (thanks @timsutton).
+* Fixed usage of base image as source on the command line (thanks @timsutton).
+
+You can download 1.6 from the [AutoDMG releases](https://github.com/MagerValp/AutoDMG/releases) page. If you have questions or need help, you can join us in [`#autodmg`](https://macadmins.slack.com/archives/autodmg) on [Slack MacAdmins](http://macadmins.org) (but please check the [documentation](https://github.com/MagerValp/AutoDMG/wiki) and especially the [FAQ](https://github.com/MagerValp/AutoDMG/wiki/FAQ) first).
