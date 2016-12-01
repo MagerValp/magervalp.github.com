@@ -1,0 +1,13 @@
+---
+layout: post
+title: AutoDMG v1.7
+tags: Mac AutoDMG
+---
+
+I was planning a small bugfix release, but I felt that the changes were large enough for a major version bump. The AppleScript trampoline that I used to kick off the privileged OS install task has been replaced by the much nicer [STPrivilegedTask](https://github.com/sveinbjornt/STPrivilegedTask). If you have automation set up to run AutoDMG, please test this release carefully.
+
+* Rewrote launch code for the privileged task that runs the OS installer.
+* Fixed beachballing during finalize task.
+* Fixed language detection for Setup Assistant on 10.12.
+
+You'll find the download on the [AutoDMG releases](https://github.com/MagerValp/AutoDMG/releases) page. If you have questions or need help, you can join us in [`#autodmg`](https://macadmins.slack.com/archives/autodmg) on [Slack MacAdmins](http://macadmins.org) (but please check the [documentation](https://github.com/MagerValp/AutoDMG/wiki) and especially the [FAQ](https://github.com/MagerValp/AutoDMG/wiki/FAQ) first).
