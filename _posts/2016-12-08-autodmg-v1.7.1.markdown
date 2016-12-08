@@ -1,0 +1,15 @@
+---
+layout: post
+title: AutoDMG v1.7.1
+tags: Mac AutoDMG
+---
+
+Hot on the heels of last week's release, here's AutoDMG 1.7.1 where I've focused on polish and bugfixing. This release brings the list of open issues down to zero, which feels really good! Unfortunately that also meant closing a few older feature requests that I wanted to implement, but when push came to shove if there's a simple one-line workaround in the Terminal, it's hard to motivate spending half a day on implementation and regression testing. Here's what did make the cut:
+
+* Now displays the current OS name and placeholder icon.
+* New menu item to select an installer, `⌘I`. `⌘⌥I` will pick the first installer it finds in `/Applications`.
+* Log window wraps long lines and shows colorful warnings.
+* Preserve `TMPDIR` when running CLI builds without `sudo`.
+* Better error handling when ejecting the temporary build image.
+
+You'll find the download on the [AutoDMG releases](https://github.com/MagerValp/AutoDMG/releases) page. If you have questions or need help, you can join us in [`#autodmg`](https://macadmins.slack.com/archives/autodmg) on [Slack MacAdmins](http://macadmins.org) (but please check the [documentation](https://github.com/MagerValp/AutoDMG/wiki) and especially the [FAQ](https://github.com/MagerValp/AutoDMG/wiki/FAQ) first).
