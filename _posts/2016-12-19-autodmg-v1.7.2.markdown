@@ -1,0 +1,25 @@
+---
+layout: post
+title: AutoDMG v1.7.2
+tags: Mac AutoDMG
+---
+
+This week I've rounded up some bugfixes together with a few minor new features. First off, after a successful build you'll find a few machine parsable statements in the log, to help people who automate builds. You'll also see a warning if the build number changes, as it does these days when you install a security update:
+
+    15 december 2016 11:35:55 GMT−5  Build success: OUTPUT_PATH='/Users/Shared/osx_updated_161216-10.11.6-15G31.hfs.dmg'
+    15 december 2016 11:35:55 GMT−5  Build success: OUTPUT_OSNAME='Mac OS X'
+    15 december 2016 11:35:55 GMT−5  Build success: OUTPUT_OSVERSION='10.11.6'
+    15 december 2016 11:35:55 GMT−5  Build success: OUTPUT_OSBUILD='15G1212'
+    15 december 2016 11:35:55 GMT−5  Build success: Notice: OS version changed from Mac OS X 10.11.6 15G31 to Mac OS X 10.11.6 15G1212
+
+Secondly I've added a deprecation warning if you're building an OS that is no longer supported by Apple, as is the case now with 10.9. This also means that I will remove support for it in AutoDMG in the not too distant future, most likely in the next major release.
+
+Full changelog:
+
+* Display warning if Apple has stopped updating the target OS.
+* Only update the profile if the running OS is supported.
+* Handle already mounted `InstallESD.dmg` if installer app was moved afterwards.
+* Abort the build if disk image creation fails.
+* Print warning in log when build number changes during install.
+
+You'll find the download on the [AutoDMG releases](https://github.com/MagerValp/AutoDMG/releases) page. If you have questions or need help, you can join us in [`#autodmg`](https://macadmins.slack.com/archives/autodmg) on [Slack MacAdmins](http://macadmins.org) (but please check the [documentation](https://github.com/MagerValp/AutoDMG/wiki) and especially the [FAQ](https://github.com/MagerValp/AutoDMG/wiki/FAQ) first).
