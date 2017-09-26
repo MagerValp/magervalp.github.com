@@ -1,0 +1,23 @@
+---
+layout: post
+title: AutoDMG v1.8
+tags: Mac AutoDMG
+---
+
+10.13 was released yesterday, and today I'm releasing the final build of AutoDMG 1.8 with full support for building both APFS and HFS+ images. Apple has made a lot of breaking changes in this cycle, to the point where we haven't been able to get 100% support for 10.13 on launch day in my organization. As a result I've had to bump a few outstanding AutoDMG issues to the next release, but they mainly concern usability and shouldn't stop anyone from using 1.8.
+
+This release also means that 10.9 support is dropped, and 10.10 is marked as deprecated. AutoDMG will launch and you can build 10.10 images, but there are no new updates from Apple.
+
+Full changelog:
+
+* Added 10.13 and APFS support.
+* Added APFS/HFS+ selection to the Advanced Options window.
+* Added `-F`/`--filesystem` option to CLI.
+* Added `Filesystem` option to templates.
+* Removed 10.9 support.
+* Fixed crash when CLI build can't eject image.
+* Fixed crash when unchecking updates without a source.
+* Fixed Unicode handling of paths for additional packages.
+* Slightly improved app launch time.
+
+You'll find the download on the [AutoDMG releases](https://github.com/MagerValp/AutoDMG/releases) page. If you have questions or need help, you can join us in [`#autodmg`](https://macadmins.slack.com/archives/autodmg) on [Slack MacAdmins](http://macadmins.org) (but please check the [documentation](https://github.com/MagerValp/AutoDMG/wiki) and especially the [FAQ](https://github.com/MagerValp/AutoDMG/wiki/FAQ) first).
