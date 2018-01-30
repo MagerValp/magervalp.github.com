@@ -443,6 +443,9 @@ article nav p {
 
 /* Shell samples. */
 
+code {
+    font-size: 100%;
+}
 code.prompt {
     color: #888;
     -webkit-user-select: none;
