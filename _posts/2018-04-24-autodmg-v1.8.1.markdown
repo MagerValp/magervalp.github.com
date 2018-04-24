@@ -1,0 +1,14 @@
+---
+layout: post
+title: AutoDMG v1.8.1
+tags: Mac AutoDMG
+---
+
+I've released AutoDMG 1.8.1, which includes the following bugfixes:
+
+* Add App Transport Security exception for `cdn-apple.com`.
+* Show a helpful error message when an [incomplete installer](https://github.com/MagerValp/AutoDMG/wiki/FAQ#9-what-are-incomplete-installers) is used.
+* Better error messages when image building fails.
+* Fail but don't crash if a profile is bad.
+
+You'll find the download on the [AutoDMG releases](https://github.com/MagerValp/AutoDMG/releases) page. If you have questions or need help, you can join us in [`#autodmg`](https://macadmins.slack.com/archives/autodmg) on [Slack MacAdmins](http://macadmins.org) (but please check the [documentation](https://github.com/MagerValp/AutoDMG/wiki) and especially the [FAQ](https://github.com/MagerValp/AutoDMG/wiki/FAQ) first).
