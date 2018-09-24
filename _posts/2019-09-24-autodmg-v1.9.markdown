@@ -1,0 +1,13 @@
+---
+layout: post
+title: AutoDMG v1.9
+tags: Mac AutoDMG
+---
+
+AutoDMG v1.9 is out! Apple unfortunately introduced a couple of OS installer bugs in Mojave beta 4 that are still unresolved. I've implemented a workaround for one of them, but one still remains:
+
+* Added 10.14 support. <br> ⚠️ To successfully build on Mojave the installer must be on an external volume, see issue [#222](https://github.com/MagerValp/AutoDMG/issues/222).
+* Removed 10.10 and 10.11 support.
+* Removed HFS+ support for 10.14+.
+
+You'll find the download on the [AutoDMG releases](https://github.com/MagerValp/AutoDMG/releases) page. If you have questions or need help, you can join us in [`#autodmg`](https://macadmins.slack.com/archives/autodmg) on [Slack MacAdmins](http://macadmins.org) (but please check the [documentation](https://github.com/MagerValp/AutoDMG/wiki) and especially the [FAQ](https://github.com/MagerValp/AutoDMG/wiki/FAQ) first).
